@@ -65,7 +65,7 @@ call_user_func( function() {
 		);
 	};
 
-	$wgHooks['WikibaseRepoEntityTypes'][] = function( &$entityTypeDefinitions ) use ( $mediaInfoDefinition ) {
+	$wgHooks['WikibaseClientEntityTypes'][] = function( &$entityTypeDefinitions ) use ( $mediaInfoDefinition ) {
 		$entityTypeDefinitions['mediainfo'] = $mediaInfoDefinition;
 	};
 
