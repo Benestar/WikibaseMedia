@@ -1,0 +1,29 @@
+{
+	"name": "wikibase/media",
+	"type": "mediawiki-extension",
+	"description": "Extension for Wikibase to enable structured data on media files.",
+	"keywords": ["wikibase", "wikidata", "media"],
+	"homepage": "https://www.mediawiki.org/wiki/Wikibase_Media",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Bene*",
+			"email": "benestar.wikimedia@gmail.com",
+			"homepage": "http://www.mediawiki.org/wiki/User:Bene*"
+		}
+	],
+	"support": {
+		"issues": "https://phabricator.wikimedia.org/project/profile/989/"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"wikibase/data-model": "~5.0",
+		"wikibase/data-model-serialization": "~2.1-dev",
+		"serialization/serialization": "~3.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"WikibaseMedia\\": "includes/"
+		}
+	}
+}
